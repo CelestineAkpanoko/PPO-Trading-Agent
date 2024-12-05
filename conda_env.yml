@@ -1,0 +1,18 @@
+name: ppo_trading_env
+channels:
+  - defaults
+dependencies:
+  - python=3.11  # or any version you prefer
+  - pip
+  - pip:
+    - torch  # specify the version of PyTorch you need
+    - gym
+    - numpy
+    - pandas
+    - matplotlib  # for plotting
+    - seaborn  # for advanced visualizations
+    - jupyter  # if you're using Jupyter notebooks
+    - stable-baselines3[extra]  # for PPO and other RL algorithms
+    - gym-trading-env
+
+# Add any other specific packages you need for your gym trading environment
